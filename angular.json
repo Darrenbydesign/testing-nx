@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "money-maker": "apps/money-maker",
+    "money-maker-e2e": "apps/money-maker-e2e"
+  }
+}

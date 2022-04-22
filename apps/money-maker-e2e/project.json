@@ -1,0 +1,28 @@
+{
+  "root": "apps/money-maker-e2e",
+  "sourceRoot": "apps/money-maker-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/money-maker-e2e/cypress.json",
+        "devServerTarget": "money-maker:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "money-maker:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/money-maker-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["money-maker"]
+}
