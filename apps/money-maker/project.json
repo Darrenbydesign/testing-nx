@@ -17,6 +17,7 @@
         "assets": [
           "apps/money-maker/src/favicon.ico",
           "apps/money-maker/src/assets"
+          
         ],
         "styles": ["apps/money-maker/src/styles.scss"],
         "scripts": []
